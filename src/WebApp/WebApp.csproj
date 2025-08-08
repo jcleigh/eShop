@@ -24,6 +24,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" />
     <PackageReference Include="Grpc.AspNetCore.Server.ClientFactory" />
     <PackageReference Include="Grpc.Tools" PrivateAssets="All" />
+    <PackageReference Include="Yarp.ReverseProxy" VersionOverride="2.3.0" />
   </ItemGroup>
 
   <ItemGroup>
