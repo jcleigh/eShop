@@ -24,7 +24,7 @@
     <PackageVersion Include="Aspire.StackExchange.Redis" Version="9.4.0" />
     <PackageVersion Include="Aspire.Azure.AI.OpenAI" Version="9.4.0-preview.1.25378.8" />
     <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery" Version="9.4.0" />
-    <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="$(AspireVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="9.4.0" />
     <!-- Version together with ASP.NET -->
     <PackageVersion Include="Asp.Versioning.Http" Version="$(ApiVersioningVersion)" />
     <PackageVersion Include="Asp.Versioning.Http.Client" Version="$(ApiVersioningVersion)" />
