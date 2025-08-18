@@ -18,6 +18,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <!-- Temporarily disabled due to CDN access issues in sandboxed environment -->
     <!-- <PackageReference Include="Microsoft.Web.LibraryManager.Build" /> -->
   </ItemGroup>
 
