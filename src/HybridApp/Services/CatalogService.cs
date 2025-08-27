@@ -2,7 +2,7 @@
 using System.Web;
 using eShop.WebApp.Components.Catalog;
 using eShop.WebApp.Components.Services;
-using eShop.WebAppComponents.Catalog;
+using eShop.WebApp.Components.Catalog;
 
 namespace eShop.HybridApp.Services;
 
