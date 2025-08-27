@@ -26,8 +26,8 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-
-        builder.Services.AddHttpClient<CatalogService>(o => o.BaseAddress = new(MobileBffHost));
+        // Use the local HybridApp CatalogService implementation
+        builder.Services.AddHttpClient<HybridApp.Services.CatalogService>(o => o.BaseAddress = new(MobileBffHost));
         builder.Services.AddSingleton<WebAppComponents.Services.IProductImageUrlProvider, ProductImageUrlProvider>();
 
         return builder.Build();

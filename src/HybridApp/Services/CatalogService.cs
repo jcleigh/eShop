@@ -1,14 +1,11 @@
 ﻿using System.Net.Http.Json;
 using System.Web;
-using eShop.WebAppComponents.Catalog;
-using eShop.WebAppComponents.Services;
 
 namespace eShop.HybridApp.Services;
 
 public class CatalogService(HttpClient httpClient) : ICatalogService
 {
     private readonly string remoteServiceBaseUrl = "api/catalog/";
-
 
     public Task<CatalogItem?> GetCatalogItem(int id)
     {
