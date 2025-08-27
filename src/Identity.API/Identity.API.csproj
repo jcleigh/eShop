@@ -19,6 +19,9 @@
     </PackageReference>
     <PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" />
     <PackageReference Include="Microsoft.Web.LibraryManager.Build" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" VersionOverride="9.0.8" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" VersionOverride="9.0.4" />
+    <PackageReference Include="Polly.Core" VersionOverride="8.4.2" />
   </ItemGroup>
 
   <ItemGroup>
