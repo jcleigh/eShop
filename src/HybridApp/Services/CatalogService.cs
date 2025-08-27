@@ -1,7 +1,7 @@
 ﻿using System.Net.Http.Json;
 using System.Web;
-using eShop.WebAppComponents.Catalog;
-using eShop.WebAppComponents.Services;
+using eShop.WebApp.Components.Catalog;
+using eShop.WebApp.Components.Services;
 
 namespace eShop.HybridApp.Services;
 
