@@ -1,5 +1,7 @@
 ﻿using System.Reflection;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Configuration;
 
 namespace eShop.Catalog.FunctionalTests;
 
