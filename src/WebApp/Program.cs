@@ -1,4 +1,4 @@
-﻿using eShop.ServiceDefaults;
+using eShop.ServiceDefaults;
 
 var builder = WebApplication.CreateBuilder(args);
 
