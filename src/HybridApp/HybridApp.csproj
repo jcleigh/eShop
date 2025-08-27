@@ -2,7 +2,7 @@
   <PropertyGroup>
     <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
     <TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
-    <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
+    <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0;net9.0-windows</TargetFrameworks>
     <!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
     <!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
     <!-- Note for MacCatalyst:
@@ -49,8 +49,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.70" />
     <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.70" />
     <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.70" />
-    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebAppComponents\WebAppComponents.csproj" />
   </ItemGroup>
   <!-- Build Properties must be defined within these property groups to ensure successful publishing
          to the Mac App Store. See: https://aka.ms/maui-publish-app-store#define-build-properties-in-your-project-file -->
