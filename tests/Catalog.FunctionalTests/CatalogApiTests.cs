@@ -1,9 +1,10 @@
-using System.Net.Http.Json;
+﻿using System.Net.Http.Json;
 using System.Text.Json;
 using Asp.Versioning;
 using Asp.Versioning.Http;
 using eShop.Catalog.API.Model;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Xunit;
 
 namespace eShop.Catalog.FunctionalTests;
 
