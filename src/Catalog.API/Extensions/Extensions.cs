@@ -28,17 +28,17 @@ public static class Extensions
         builder.Services.AddOptions<CatalogOptions>()
             .BindConfiguration(nameof(CatalogOptions));
 
-        if (builder.Configuration["AI:Onnx:EmbeddingModelPath"] is string modelPath &&
-            builder.Configuration["AI:Onnx:EmbeddingVocabPath"] is string vocabPath)
-        {
-            builder.Services.AddBertOnnxTextEmbeddingGeneration(modelPath, vocabPath);
-        }
-        else if (!string.IsNullOrWhiteSpace(builder.Configuration.GetConnectionString("openai")))
-        {
-            builder.AddAzureOpenAIClient("openai");
-            builder.Services.AddOpenAITextEmbeddingGeneration(builder.Configuration["AIOptions:OpenAI:EmbeddingName"] ?? "text-embedding-3-small");
-        }
+        // if (builder.Configuration["AI:Onnx:EmbeddingModelPath"] is string modelPath &&
+        //     builder.Configuration["AI:Onnx:EmbeddingVocabPath"] is string vocabPath)
+        // {
+        //     builder.Services.AddBertOnnxTextEmbeddingGeneration(modelPath, vocabPath);
+        // }
+        // else if (!string.IsNullOrWhiteSpace(builder.Configuration.GetConnectionString("openai")))
+        // {
+        //     builder.AddAzureOpenAIClient("openai");
+        //     builder.Services.AddOpenAITextEmbeddingGeneration(builder.Configuration["AIOptions:OpenAI:EmbeddingName"] ?? "text-embedding-3-small");
+        // }
 
-        builder.Services.AddSingleton<ICatalogAI, CatalogAI>();
+        // builder.Services.AddSingleton<ICatalogAI, CatalogAI>();
     }
 }

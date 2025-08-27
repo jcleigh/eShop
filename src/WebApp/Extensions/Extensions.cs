@@ -100,15 +100,15 @@ public static class Extensions
 
     private static void AddAIServices(this IHostApplicationBuilder builder)
     {
-        var openAIOptions = builder.Configuration.GetSection("AI").Get<AIOptions>()?.OpenAI;
-        var deploymentName = openAIOptions?.ChatModel;
+        // var openAIOptions = builder.Configuration.GetSection("AI").Get<AIOptions>()?.OpenAI;
+        // var deploymentName = openAIOptions?.ChatModel;
 
-        if (!string.IsNullOrWhiteSpace(builder.Configuration.GetConnectionString("openai")) && !string.IsNullOrWhiteSpace(deploymentName))
-        {
-            builder.Services.AddKernel();
-            builder.AddAzureOpenAIClient("openai");
-            builder.Services.AddAzureOpenAIChatCompletion(deploymentName);
-        }
+        // if (!string.IsNullOrWhiteSpace(builder.Configuration.GetConnectionString("openai")) && !string.IsNullOrWhiteSpace(deploymentName))
+        // {
+        //     builder.Services.AddKernel();
+        //     builder.AddAzureOpenAIClient("openai");
+        //     builder.Services.AddAzureOpenAIChatCompletion(deploymentName);
+        // }
     }
 
     public static async Task<string?> GetBuyerIdAsync(this AuthenticationStateProvider authenticationStateProvider)
